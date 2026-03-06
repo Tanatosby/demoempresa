@@ -43,7 +43,7 @@ This is a basic login for a enterprise. You can do it two roles, first de admin 
 ## Como instalar // How to install:
 First:  
 On the shell: 
-<code>git clone -b v1 --single-branch https://github.com/Tanatosby/demoempresa.git</code>
+<code>git clone https://github.com/Tanatosby/demoempresa.git</code>
 
 Second: 
 When you have your folder cloned, enter into scripts.js and in line 
