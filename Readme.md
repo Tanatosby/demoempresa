@@ -28,7 +28,16 @@ Este login muestra un acceso a un panel de admin que agrega usuarios y les asign
 </table>
 
 ## Como instalar:
-
+First:  
 <code>git clone https://github.com/Tanatosby/demoempresa</code>
 
+Second: 
+When you have your folder cloned, enter into scripts.js and in line 
+
+<code>
+      databaseURL: "https://test21-e8c4214-default-rt2231db.fi312aseio.com/"
+</code>
+
+Put your firebase database without datos for functioning. 
+Third: 
 Abrir en Live Server. 
