@@ -1,13 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1>Login</h1>
-    <a href="console.html"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo" width="50" height="50"></a>
+<body class="login-page">
 
+  <div class="login-card">
+    <div class="brand">
+      <div class="brand-icon">⚡</div>
+      <span class="brand-name">AppPanel</span>
+    </div>
+
+    <h2>Bienvenido</h2>
+    <p class="subtitle">Ingresa tus credenciales para continuar</p>
+
+    <div id="loginError" class="login-error" role="alert"></div>
+
+    <form id="loginForm" autocomplete="off">
+      <div class="field">
+        <label for="username">Usuario</label>
+        <input type="text" id="username" name="username"
+               placeholder="tu_usuario" autocomplete="username" required>
+      </div>
+      <div class="field">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password"
+               placeholder="••••••••" autocomplete="current-password" required>
+      </div>
+      <button type="submit" class="btn btn-primary" style="margin-top:0.5rem">
+        <span id="btnText">Iniciar sesión</span>
+        <span id="btnSpinner" class="spinner" style="display:none"></span>
+      </button>
+    </form>
+  </div>
+
+  <script type="module" src="scripts.js"></script>
 </body>
 </html>
