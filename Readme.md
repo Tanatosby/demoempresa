@@ -34,9 +34,9 @@ First:
 Second: 
 When you have your folder cloned, enter into scripts.js and in line 
 
-<code>
-      databaseURL: "https://test21-e8c4214-default-rt2231db.fi312aseio.com/"
-</code>
+<code>const firebaseConfig = {
+  databaseURL: "https://test21-e8c4214-default-rt2231db.fi312aseio.com/"
+}</code>
 
 Put your firebase database without datos for functioning. 
 Third: 
