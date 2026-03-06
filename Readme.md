@@ -40,9 +40,10 @@ This is a basic login for a enterprise. You can do it two roles, first de admin 
     </tr>
 </table>
 
-## Como instalar:
+## Como instalar // How to install:
 First:  
-<code>git clone https://github.com/Tanatosby/demoempresa</code>
+On the shell: 
+<code>git clone -b v1 --single-branch https://github.com/Tanatosby/demoempresa.git</code>
 
 Second: 
 When you have your folder cloned, enter into scripts.js and in line 
@@ -54,3 +55,19 @@ When you have your folder cloned, enter into scripts.js and in line
 Put your firebase database without datos for functioning. 
 
 Third: Open in Live Server. 
+
+Primero: 
+En el terminal ejecuta: 
+<code>git clone -b v1 --single-branch https://github.com/Tanatosby/demoempresa.git</code>
+
+
+Segundo: 
+
+Cuando termines de clonar, cambiar la base de datos por tu base de datos de firebase.
+
+<code>const firebaseConfig = {
+  databaseURL: "https://test21-e8c4214-default-rt2231db.fi312aseio.com/"
+}</code>
+
+Tercero: 
+Correr en Live Server. 
