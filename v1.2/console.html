@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consola</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="console-layout">
+
+    <!-- ── SIDEBAR ── -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
+        <div class="sidebar-brand-icon">⚡</div>
+        <span class="sidebar-brand-name">AppPanel</span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <ul id="sidebarNav">
+          <!-- Populated dynamically by scripts.js based on role -->
+        </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-chip">
+          <div class="user-avatar" id="userAvatar">—</div>
+          <div class="user-info">
+            <div class="user-name" id="userName">…</div>
+            <div class="user-role" id="userRole">…</div>
+          </div>
+          <button class="btn-logout" id="btnLogout" title="Cerrar sesión">⏻</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ── MAIN ── -->
+    <div class="main-content">
+      <header class="top-bar">
+        <span class="top-bar-title" id="topBarTitle">Cargando…</span>
+        <span id="roleBadge" class="badge">…</span>
+      </header>
+
+      <main class="page-body">
+        <div id="moduleContent">
+          <!-- Populated dynamically by scripts.js -->
+        </div>
+      </main>
+    </div>
+
+  </div>
+
+  <div id="toast-container"></div>
+
+  <script type="module" src="scripts.js"></script>
+</body>
+</html>
